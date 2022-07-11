@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #DCD7C9;
+}
+
+img, video {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: 50ms ease;
+}

@@ -1,0 +1,52 @@
+.header {
+
+
+    &__top {
+        padding: 10px 0;
+        background-color: #2C3639;
+
+        &_block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        &_item{
+            display: flex;
+            align-items: center;
+            a{
+                color: white;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 10px 0;
+        border-bottom: 1px solid #000;
+
+        &_block {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        color: black;
+    }
+
+    &__menu {
+        &_block {}
+
+        &_item {
+            color: black;
+            padding: 10px;
+
+            &:hover {
+                background-color: #3F4E4F;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.form{
+    padding: 40px;
+    background-color: black;
+    color: white;
+    &__title{
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        width: 24%;
+    }
+
+    &__submit{
+        width: 24%;
+        margin-left: auto;
+    }
+}
+
+.card{
+    border-radius: 0;
+}
+
+.card-img,
+.card-img-top{
+    border-radius: 0;
+}
