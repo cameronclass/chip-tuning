@@ -1,9 +1,17 @@
 .header {
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 15;
 
     &__top {
         padding: 10px 0;
-        background-color: #2C3639;
+        background-color: $dark-blue;
+
+        @include mobile {
+            padding: 5px 0;
+        }
 
         &_block {
             display: flex;
@@ -12,18 +20,31 @@
             color: white;
         }
 
-        &_item{
+        &_item {
             display: flex;
             align-items: center;
-            a{
+            font-size: 14px;
+            color: white;
+
+            &:hover {
                 color: white;
             }
+
+            .bi {
+                margin-right: 10px;
+            }
+
+
         }
     }
 
     &__bottom {
-        padding: 10px 0;
+        padding: 20px 0;
         border-bottom: 1px solid #000;
+
+        @include mobile {
+            padding: 5px 0;
+        }
 
         &_block {
             display: flex;
@@ -37,14 +58,69 @@
     }
 
     &__menu {
-        &_block {}
+        &_block {
+            @include mobile {
+                position: fixed;
+                background-color: $dark-blue;
+                color: white;
+                right: -100%;
+                top: 0;
+                width: 100%;
+                max-width: 320px;
+                height: 100vh;
+                z-index: 20;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                padding: 20px 20px;
+                transition: 300ms ease;
+            }
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        &_mobile {
+            display: none;
+            border: none;
+            background-color: transparent;
+            font-size: 26px;
+
+            @include mobile {
+                display: flex;
+            }
+
+            &_close {
+                display: none;
+                border: none;
+                background-color: transparent;
+                margin-bottom: 20px;
+                color: white;
+                font-size: 26px;
+
+                @include mobile {
+                    display: inline-block;
+                }
+            }
+        }
 
         &_item {
             color: black;
             padding: 10px;
+            font-weight: 500;
+
+            @include mobile {
+                color: white;
+                background-color: $blue;
+                margin-bottom: 10px;
+                font-size: 14px;
+                width: 100%;
+                text-align: left;
+            }
 
             &:hover {
-                background-color: #3F4E4F;
+                background-color: $blue;
                 color: white;
             }
         }

@@ -1,33 +1,72 @@
-.form{
+.form {
     padding: 40px;
-    background-color: black;
+    background-color: $blue;
     color: white;
-    &__title{
-        font-size: 24px;
-        font-weight: bold;
+
+    @include mobile {
+        padding: 20px;
     }
 
-    &__block{
+    &__title {}
+
+    &__block {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__item {
         width: 24%;
+
+        @include mobile {
+            width: 100%;
+            margin-bottom: 8px;
+        }
     }
 
-    &__submit{
+    &__submit {
         width: 24%;
         margin-left: auto;
     }
 }
 
-.card{
+.card {
     border-radius: 0;
 }
 
 .card-img,
-.card-img-top{
+.card-img-top {
     border-radius: 0;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+    @include mobile {
+        font-size: 18px;
+    }
+
+    &-small {
+        font-size: 18px;
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        display: inline-block;
+        width: 50px;
+        height: 3px;
+        background-color: $red;
+    }
 }

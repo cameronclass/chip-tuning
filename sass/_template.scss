@@ -1,15 +1,17 @@
 * {
     box-sizing: border-box;
+    font-family: $font;
 }
 
 body,
 html {
     margin: 0;
     padding: 0;
-    background-color: #DCD7C9;
+    background-color: white;
 }
 
-img, video {
+img,
+video {
     width: 100%;
     height: auto;
 }
@@ -17,4 +19,9 @@ img, video {
 a {
     text-decoration: none;
     transition: 50ms ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1250px;
 }
