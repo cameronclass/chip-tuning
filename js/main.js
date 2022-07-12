@@ -15,10 +15,7 @@ new Swiper(".projects__slider", {
     nextEl: ".projects .swiper-button-next",
     prevEl: ".projects .swiper-button-prev",
   },
-  pagination: {
-    el: ".projects .swiper-pagination",
-  },
-  loop: true,
+  loop: false,
   keyboard: true,
 });
 
@@ -29,10 +26,8 @@ new Swiper(".blog__slider", {
     nextEl: ".blog .swiper-button-next",
     prevEl: ".blog .swiper-button-prev",
   },
-  pagination: {
-    el: ".blog .swiper-pagination",
-  },
-  loop: true,
+
+  loop: false,
   keyboard: true,
 
   breakpoints: {
@@ -58,10 +53,8 @@ new Swiper(".reviews__slider", {
     nextEl: ".reviews .swiper-button-next",
     prevEl: ".reviews .swiper-button-prev",
   },
-  pagination: {
-    el: ".reviews .swiper-pagination",
-  },
-  loop: true,
+
+  loop: false,
   keyboard: true,
 
   breakpoints: {
@@ -83,10 +76,8 @@ new Swiper(".videos__slider", {
     nextEl: ".videos .swiper-button-next",
     prevEl: ".videos .swiper-button-prev",
   },
-  pagination: {
-    el: ".videos .swiper-pagination",
-  },
-  loop: true,
+
+  loop: false,
   keyboard: true,
 
   breakpoints: {

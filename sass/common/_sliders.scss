@@ -9,6 +9,7 @@
     width: 40px;
     height: 40px;
     border: 2px solid $blue;
+    position: relative;
 
     &::after {
         font-size: 20px;
@@ -17,20 +18,16 @@
         justify-content: center;
     }
 
-    @include mobile {
-        display: none;
-    }
-
 }
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-    right: -40px;
+    right: -20px;
 }
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-    left: -40px;
+    left: -20px;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets,

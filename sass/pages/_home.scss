@@ -1,14 +1,3 @@
-.main-img {
-    &__img {
-        height: 400px;
-        object-fit: cover;
-
-        @include mobile {
-            height: 200px;
-        }
-    }
-}
-
 .main-company {
     &__block {
         display: flex;
@@ -28,6 +17,9 @@
         text-transform: uppercase;
         text-align: center;
         font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @include laptop {
             width: 23%;
@@ -38,7 +30,10 @@
         }
 
         @include mobile {
-            width: 48%;
+            width: 31%;
+            height: 150px;
+            font-size: 14px;
+            line-height: 1;
         }
 
         &:hover {
@@ -47,11 +42,20 @@
 
         a {
             color: black;
+
+            span {
+                display: inline-block;
+                margin-top: 10px;
+            }
         }
 
         img {
             height: 90px;
             object-fit: contain;
+
+            @include mobile {
+                height: 75px;
+            }
         }
     }
 }
@@ -186,6 +190,34 @@
     }
 }
 
+.blog-page {
+    .blog {
+        &__card {
+            width: 48%;
+            margin-bottom: 20px;
+
+            img {
+                height: 350px;
+                object-fit: cover;
+            }
+
+            @include netbook {
+                img {
+                    height: 300px;
+                }
+            }
+
+            @include mobile {
+                width: 100%;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+
 .reviews {
     &__card {
         .card-title {
@@ -222,4 +254,31 @@
     &__text {}
 
     &__block {}
+}
+
+.videos-page {
+    .videos {
+        &__card {
+            width: 48%;
+
+            img {
+                height: 400px;
+                object-fit: cover;
+            }
+
+            @include netbook {
+                img {
+                    height: 300px;
+                }
+            }
+
+            @include mobile {
+                width: 100%;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
 }
